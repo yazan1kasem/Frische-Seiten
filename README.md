@@ -6,17 +6,21 @@
 
 ## Projektübersicht
 
-Dieses Projekt ist eine Windows-Desktop-Anwendung zur Verwaltung geografischer Bezirksdaten. Es wurde mit .NET Framework erstellt und ist als `.exe`-Anwendung ausführbar. Die Anwendung basiert auf einer Microsoft Access-Datenbank und erlaubt das Einlesen, Bearbeiten und Auswerten von Bezirksinformationen über eine grafische Benutzeroberfläche.
+„Frische Seiten“ ist eine Windows-Desktop-Anwendung zur gezielten Suche nach Friseursalons in ganz Wien. Die Applikation ermöglicht Nutzerinnen und Nutzern, passende Friseure anhand verschiedener Kriterien wie Preis, Bezirk, Haartyp (z. B. lockig, glatt, dick, dünn) und Kundenbewertungen zu filtern und sortieren.
 
-Die Software wurde mit dem Ziel entwickelt, eine einfache, benutzerfreundliche Lösung für die Verwaltung strukturierter XML- und Datenbankinformationen bereitzustellen, etwa zur Verwendung in Bildungseinrichtungen, Verwaltungsumgebungen oder als internes Tool zur Visualisierung geografischer Informationen.
+Das Ziel der Anwendung ist es, eine einfache und übersichtliche Plattform bereitzustellen, mit der man den optimalen Friseur für die eigenen Bedürfnisse schnell und effizient findet. Die Anwendung wurde mit dem .NET Framework entwickelt und nutzt Microsoft Access zur Datenspeicherung.
 
 ## Hauptfunktionen
 
-- Auslesen und Verarbeiten von XML-Dateien (`districts.xml`)
-- Speicherung von Daten in MS Access-Datenbanken (`.accdb`, `.mdb`)
-- Windows-Forms-UI für einfache Bedienbarkeit
-- Unterstützung für verschiedene Versionen durch `.exe.config`-Datei
-- Kompilierte Anwendung verfügbar (`Frische_Seiten.exe`)
+- Suche nach Friseursalons in Wien basierend auf:
+  - Preis
+  - Bezirkszugehörigkeit
+  - Spezialisierung auf Haartypen
+  - Kundenbewertungen
+- Sortierfunktion nach günstigstem Preis
+- Benutzerfreundliche Windows-Forms-Oberfläche
+- Verknüpfung mit einer Access-Datenbank für flexible Datenpflege
+- XML-Unterstützung für externe Datenquellen (z. B. `districts.xml`)
 
 ## Technologie-Stack
 
@@ -36,7 +40,7 @@ Frische-Seiten/
 ├── Frische_Seiten.exe.config       → Konfiguration für Runtime-Einstellungen
 ├── Frische_Seiten.pdb              → Debug-Symboldatei
 ├── Frische_SeitenV14j.zip          → Verteilbares Gesamtpaket
-├── districts.xml                   → Beispieldaten (Bezirke, geografische Einträge)
+├── districts.xml                   → Bezirksinformationen für Wien
 ├── frische seiten.accdb            → Access-Datenbank (neuere Version)
 ├── frische seiten.mdb              → Access-Datenbank (ältere Version)
 ```
@@ -52,12 +56,8 @@ Frische-Seiten/
 1. Repository herunterladen oder das `.zip`-Paket entpacken.
 2. Die Datei `Frische_Seiten.exe` ausführen.
 3. Optional: Die Datei `Frische_Seiten.exe.config` anpassen für benutzerdefinierte Einstellungen.
-4. Die Datei `districts.xml` als Datenquelle verwenden oder eigene XML-Dateien einbinden.
+4. Die Datenbankdateien (`.accdb`/`.mdb`) sowie `districts.xml` als Grundlage für die Suche verwenden.
 
 ## Hinweise zur Weiterentwicklung
 
-Die aktuelle Version ist primär als Desktoplösung konzipiert. Eine Weiterentwicklung könnte eine Migration auf eine Web- oder Cross-Plattform-Lösung (z. B. WPF mit .NET Core oder Electron) umfassen sowie die Anbindung an modernere relationale Datenbanksysteme (z. B. PostgreSQL oder SQLite).
-
-## Lizenz
-
-Dieses Projekt wurde zu Demonstrations- und Ausbildungszwecken erstellt. Lizenzangaben sind dem Repository nicht explizit beigefügt.
+Eine mögliche Weiterentwicklung könnte die Migration auf eine Web- oder Cross-Plattform-Lösung (z. B. WPF mit .NET Core oder Electron) sein sowie die Anbindung an moderne relationale Datenbanksysteme (z. B. PostgreSQL oder SQLite). Ebenso wäre eine Integration von Online-Bewertungen und Google Maps APIs denkbar.
