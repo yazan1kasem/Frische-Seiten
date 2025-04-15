@@ -6,7 +6,7 @@
 
 ## Projektübersicht
 
-„Frische Seiten“ ist eine Windows-Desktop-Anwendung zur gezielten Suche nach Friseursalons in ganz Wien. Die Applikation ermöglicht Nutzerinnen und Nutzern, passende Friseure anhand verschiedener Kriterien wie Preis, Bezirk, Haartyp (z. B. lockig, glatt, dick, dünn) und Kundenbewertungen zu filtern und sortieren.
+„Frische Seiten“ ist eine Windows-Desktop-Anwendung zur gezielten Suche nach Friseursalons in ganz Wien. Die Applikation ermöglicht Nutzerinnen und Nutzern, passende Friseure anhand verschiedener Kriterien wie Preis, Bezirk, Haartyp (z. B. lockig, glatt, dich, glatze) und Kundenbewertungen zu filtern und sortieren.
 
 Das Ziel der Anwendung ist es, eine einfache und übersichtliche Plattform bereitzustellen, mit der man den optimalen Friseur für die eigenen Bedürfnisse schnell und effizient findet. Die Anwendung wurde mit dem .NET Framework entwickelt und nutzt Microsoft Access zur Datenspeicherung.
 
